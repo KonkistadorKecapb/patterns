@@ -22,6 +22,8 @@ namespace Main {
         // Proxy\\proxy();
         // Decorator\\decorator();
         // Observer\\observer();
+
+        // AbstractFactory\\abstractFactory();
         ".
             \preg_replace('/(namespace .*);/', '} '."\n".'$1 {', $fileContent).
             "}}\n";
