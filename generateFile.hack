@@ -22,6 +22,7 @@ namespace Main {
 
         // AbstractFactory\\abstractFactory();
         // Bridge\\bridge();
+        // Composite\\composite();
         ".
             \preg_replace('/(namespace .*);/', '} '."\n".'$1 {', $fileContent).
             "}}\n";
