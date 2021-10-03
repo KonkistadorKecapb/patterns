@@ -21,6 +21,7 @@ namespace Main {
         // Observer\\observer();
 
         // AbstractFactory\\abstractFactory();
+        // Bridge\\bridge();
         ".
             \preg_replace('/(namespace .*);/', '} '."\n".'$1 {', $fileContent).
             "}}\n";
