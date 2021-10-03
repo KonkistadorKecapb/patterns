@@ -24,6 +24,8 @@ namespace Main {
         // Bridge\\bridge();
         // Composite\\composite();
         // Facade\\facade();
+
+        // Visitor\\visitor();
         ".
             \preg_replace('/(namespace .*);/', '} '."\n".'$1 {', $fileContent).
             "}}\n";
