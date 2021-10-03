@@ -7,11 +7,8 @@ function generateFile(): void {
     );
 
     if ($result) {
-        $fileContent = \str_replace(
-            '\\FactoryMethod',
-            '\\Main\\FactoryMethod',
-            $result,
-        );
+        $fileContent =
+            \str_replace('\\FactoryMethod', '\\Main\\FactoryMethod', $result);
 
         $fileContent = "
 namespace Main {
