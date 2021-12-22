@@ -26,6 +26,7 @@ namespace Main {
         // Facade\\facade();
 
         // Visitor\\visitor();
+        // Iterator\\iterator();
         ".
             \preg_replace('/(namespace .*);/', '} '."\n".'$1 {', $fileContent).
             "}}\n";
